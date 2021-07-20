@@ -1,0 +1,14 @@
+[user]
+	name = pxseu
+	email = 57842793+pxseu@users.noreply.github.com
+	signingKey = 0F2B65D55903BE65B94984654936461FD76058BA
+[push]
+	followTags = true
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[init]
+	defaultBranch = senpai
+[tag]
+	forceSignAnnotated = true
