@@ -11,10 +11,10 @@ plugins=(
   zsh-autosuggestions
 )
 
-export PATH="/home/pxseuwu/.local/share/gem/ruby/3.0.0/bin:/home/pxseuwu/.local/bin:$PATH"
+export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:/home/pxseuwu/.local/bin:$PATH"
 export PATH="$(yarn global bin):$PATH"
 
-export ZSH="/home/pxseuwu/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 source $ZSH/oh-my-zsh.sh
