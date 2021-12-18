@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing deps"
-yes | sudo pacman -S --needed neovim zsh git kitty base-devel yarn python3
+yes | sudo pacman -S --needed neovim zsh git kitty base-devel yarn python3 htop knome-keyring
 
 cd "$(dirname "$0")"
 echo "Installing ZSH"
@@ -18,3 +18,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 echo "Installing YAY packages"
 yay -S code-insiders google-chrome-dev spotify --noconfirm
 
+echo "Installing Fonts"
+yay -S noto-fonts-emoji ttf-fira-code ttf-meslo-nerd-font-powerlevel10k

@@ -9,6 +9,7 @@ plugins=(
   node
   sudo
   zsh-autosuggestions
+  nvm
 )
 
 export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:/home/pxseuwu/.local/bin:$PATH"
@@ -24,11 +25,12 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias vi="nvim"
 
-export VISUAL="nvim"
-export EDITOR="$VISUAL"
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export VISUAL="nvim"                                                                                    
+export EDITOR="$VISUAL" 
 export GPG_TTY=$TTY
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
