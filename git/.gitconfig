@@ -4,6 +4,7 @@
 	signingKey = 0F2B65D55903BE65B94984654936461FD76058BA
 [push]
 	followTags = true
+	autoSetupRemote = true
 [commit]
 	gpgsign = true
 [gpg]
@@ -14,3 +15,5 @@
 	forceSignAnnotated = true
 [pull]
 	rebase = true
+[safe]
+	directory = *

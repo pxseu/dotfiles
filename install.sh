@@ -15,6 +15,9 @@ echo "Installing VIM-PLUG"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+echo "Installing rustup"
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 echo "Installing YAY packages"
 yay -S code-insiders google-chrome-dev spotify --noconfirm
 
