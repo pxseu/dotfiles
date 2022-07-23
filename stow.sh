@@ -7,3 +7,5 @@ do
     stow ${dir##*/}
 done
 
+echo "> Restoring old files"
+git restore .
